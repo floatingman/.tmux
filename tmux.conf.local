@@ -29,7 +29,6 @@ tmux_conf_new_session_prompt=true
 #   - disabled (do not modify new-session bindings)
 tmux_conf_new_session_retain_current_path=false
 
-
 # -- windows & pane creation ---------------------------------------------------
 
 # new window retains current path, possible values are:
@@ -368,8 +367,6 @@ tmux_conf_copy_to_os_clipboard=true
 
 # options passed to urlscan
 tmux_conf_urlscan_options="--compact --dedupe"
-
-
 # -- user customizations -------------------------------------------------------
 
 # this is the place to override or undo settings
