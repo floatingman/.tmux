@@ -439,6 +439,15 @@ set -g @plugin 'tmux-plugins/tmux-continuum'
 set -g @continuum-restore 'on'
 set -g @continuum-save-interval '1'
 set -g @plugin 'wfxr/tmux-fzf-url'
+
+# -- theme sync ----------------------------------------------------------------
+
+# Sync tmux colors with system (GNOME) dark/light preference.
+# Runs after Oh My Tmux finishes (background with delay) and watches for changes.
+# Uses Catppuccin Mocha (dark) / Catppuccin Latte (light).
+# Manual toggle: ~/.config/tmux/theme-sync.sh {dark|light|apply}
+run -b 'sleep 2 && ~/.config/tmux/theme-sync.sh apply && ~/.config/tmux/theme-sync.sh watch'
+
 # -- custom variables ----------------------------------------------------------
 
 # to define a custom #{foo} variable, define a POSIX shell function between the
