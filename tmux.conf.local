@@ -370,6 +370,9 @@ tmux_conf_urlscan_options="--compact --dedupe"
 
 # this is the place to override or undo settings
 
+# For pi agent
+set -g extended-keys on
+
 # increase history size
 set -g history-limit 10000
 
